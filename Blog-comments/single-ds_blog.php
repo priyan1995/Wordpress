@@ -108,7 +108,8 @@ the_post();
 
                         <?php                            
                             $args = array(
-                                'status' => 'approve'
+                                'status' => 'approve',
+                                'post_id' => $postid
                             );
                                                         
                             $comments_query = new WP_Comment_Query;
